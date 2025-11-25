@@ -236,8 +236,7 @@ npm run format # Format code with Prettier
 
 ## 👥 Contributors
 
-- [Your Name] - Initial setup and architecture
-- [Friend's Name] - Boilerplate implementation
+- Abdul Rahman Delvi - Initial setup and architecture and Boilerplate implementation
 
 ---
 
