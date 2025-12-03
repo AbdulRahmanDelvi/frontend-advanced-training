@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- language attribute for accessibility and SEO -->
+<head>
+    <meta charset="UTF-8">
+    <!-- Character encoding for proper text rendering -->
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Responsive design - mobile-first -->
+    
+    <meta name="description" content="Discover our innovative web solutions designed to elevate your digital presence. Expert development, cutting-edge technology, and user-focused design.">
+    <!-- SEO: concise page description for search results -->
+    
+    <title>Modern Web Solutions | Professional Development Services</title>
+    <!-- SEO: descriptive title with keywords -->
+    
+    <!-- Open Graph tags for social media sharing -->
+    <meta property="og:title" content="Modern Web Solutions | Professional Development Services">
+    <meta property="og:description" content="Discover our innovative web solutions designed to elevate your digital presence. Expert development, cutting-edge technology, and user-focused design.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://example.com/">
+    <meta property="og:image" content="https://example.com/images/og-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Modern Web Solutions">
+    
+    <!-- Twitter Card tags for better Twitter previews -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modern Web Solutions | Professional Development Services">
+    <meta name="twitter:description" content="Discover our innovative web solutions designed to elevate your digital presence.">
+    <meta name="twitter:image" content="https://example.com/images/twitter-preview.jpg">
+</head>
+<body>
+    <!-- Semantic: header contains site branding and primary navigation -->
+    <header>
+        <h1>Modern Web Solutions</h1>
+        <!-- h1: primary page heading for SEO -->
+        
+        <p>Building the Future of Web</p>
+        
+        <!-- Semantic: nav identifies main navigation -->
+        <nav aria-label="Primary Navigation">
+            <!-- aria-label: clarifies which navigation when multiple exist -->
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Semantic: main contains primary page content, one per page -->
+    <main id="main-content">
+        
+        <!-- Semantic: section groups thematic content - hero area -->
+        <section aria-labelledby="hero-heading">
+            <!-- aria-labelledby: associates section with its heading for screen readers -->
+            <h2 id="hero-heading">Transform Your Digital Presence</h2>
+            
+            <p>We create exceptional web experiences that drive results. From concept to deployment, our team delivers innovative solutions tailored to your business needs.</p>
+            
+            <p>Join hundreds of satisfied clients who have transformed their online presence with our cutting-edge web development services.</p>
+            
+            <a href="#contact" aria-label="Get started with our services">Get Started Today</a>
+            <!-- aria-label: provides context for generic link text -->
+        </section>
+
+        <!-- Semantic: section groups features content -->
+        <section aria-labelledby="features-heading" id="features">
+            <h2 id="features-heading">Our Core Features</h2>
+            
+            <p>We combine technical excellence with creative innovation to deliver outstanding results.</p>
+            
+            <!-- Each feature as article: self-contained, reusable content -->
+            <article aria-labelledby="feature1-heading">
+                <h3 id="feature1-heading">Responsive Design</h3>
+                
+                <img src="https://via.placeholder.com/400x300/21808D/FCFCF9?text=Responsive+Design" alt="Illustration of responsive web design across multiple devices including desktop, tablet, and mobile">
+                <!-- Descriptive alt text for accessibility -->
+                
+                <p>Every website we build adapts seamlessly to any screen size. Our mobile-first approach ensures optimal user experience across all devices, from smartphones to desktop computers.</p>
+                
+                <p><strong>Key benefits:</strong> Improved user engagement, better SEO rankings, and increased conversion rates.</p>
+            </article>
+
+            <article aria-labelledby="feature2-heading">
+                <h3 id="feature2-heading">Performance Optimization</h3>
+                
+                <img src="https://via.placeholder.com/400x300/21808D/FCFCF9?text=Performance" alt="Dashboard showing website performance metrics including load time and speed scores">
+                
+                <p>Lightning-fast load times are crucial for user satisfaction and search engine rankings. We optimize every aspect of your site for maximum speed and efficiency.</p>
+                
+                <p><strong>Key benefits:</strong> Reduced bounce rates, higher search rankings, and improved user satisfaction.</p>
+            </article>
+
+            <article aria-labelledby="feature3-heading">
+                <h3 id="feature3-heading">Accessibility First</h3>
+                
+                <img src="https://via.placeholder.com/400x300/21808D/FCFCF9?text=Accessibility" alt="Visual representation of accessibility features including keyboard navigation and screen reader support">
+                
+                <p>We build websites that everyone can use. Our accessibility-first approach ensures compliance with WCAG 2.1 standards, making your content available to all users.</p>
+                
+                <p><strong>Key benefits:</strong> Broader audience reach, legal compliance, and enhanced user experience for all visitors.</p>
+            </article>
+        </section>
+
+        <!-- Semantic: section for call-to-action -->
+        <section aria-labelledby="cta-heading">
+            <h2 id="cta-heading">Ready to Get Started?</h2>
+            
+            <p>Let's discuss how we can help transform your digital presence. Our team is ready to bring your vision to life with cutting-edge web solutions.</p>
+            
+            <!-- Semantic: form element with proper labels for accessibility -->
+            <form action="/contact" method="post" aria-label="Contact form">
+                <!-- aria-label: identifies form purpose -->
+                
+                <div>
+                    <label for="name">Full Name:</label>
+                    <!-- label with for attribute: accessibility requirement -->
+                    <input type="text" id="name" name="name" required aria-required="true">
+                    <!-- aria-required: reinforces required status for screen readers -->
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required aria-required="true">
+                    <!-- type="email": validates email format -->
+                </div>
+
+                <div>
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company">
+                </div>
+
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
+                    <!-- textarea: semantic element for multi-line input -->
+                </div>
+
+                <div>
+                    <button type="submit">Send Message</button>
+                    <!-- button: semantic, keyboard-accessible by default -->
+                </div>
+            </form>
+        </section>
+
+        <!-- Semantic: aside for supplementary content -->
+        <aside aria-label="Client testimonials">
+            <!-- aria-label: clarifies aside purpose -->
+            <h2>What Our Clients Say</h2>
+            
+            <blockquote>
+                <!-- blockquote: semantic element for quoted content -->
+                <p>"Working with Modern Web Solutions transformed our online presence. The team's attention to detail and technical expertise exceeded our expectations."</p>
+                <footer>
+                    — <cite>Sarah Johnson, CEO of TechStart Inc.</cite>
+                    <!-- cite: semantic element for attribution -->
+                </footer>
+            </blockquote>
+
+            <blockquote>
+                <p>"The responsive design and performance optimization made a huge difference. Our site now loads instantly and looks perfect on every device."</p>
+                <footer>
+                    — <cite>Michael Chen, Founder of Digital Ventures</cite>
+                </footer>
+            </blockquote>
+        </aside>
+
+        <!-- Semantic: section for about content -->
+        <section aria-labelledby="about-heading" id="about">
+            <h2 id="about-heading">About Our Team</h2>
+            
+            <p>We are a dedicated team of web developers, designers, and digital strategists passionate about creating exceptional online experiences. With over 10 years of combined experience, we've helped businesses of all sizes achieve their digital goals.</p>
+            
+            <p>Our approach combines technical excellence with creative innovation, ensuring every project we deliver meets the highest standards of quality, accessibility, and performance.</p>
+            
+            <!-- Semantic: address for contact information -->
+            <address>
+                <p><strong>Contact Information:</strong></p>
+                <p>Email: <a href="mailto:info@modernwebsolutions.com">info@modernwebsolutions.com</a></p>
+                <p>Phone: <a href="tel:+15551234567">+1 (555) 123-4567</a></p>
+                <p>Location: 123 Web Street, San Francisco, CA 94102</p>
+            </address>
+            <!-- address: semantic element for contact details -->
+        </section>
+
+    </main>
+
+    <!-- Semantic: footer contains site-wide footer content -->
+    <footer>
+        <section aria-label="Footer navigation">
+            <h2>Quick Links</h2>
+            
+            <nav aria-label="Footer Navigation">
+                <!-- Second nav: aria-label distinguishes from header nav -->
+                <ul>
+                    <li><a href="#privacy">Privacy Policy</a></li>
+                    <li><a href="#terms">Terms of Service</a></li>
+                    <li><a href="#sitemap">Sitemap</a></li>
+                    <li><a href="#careers">Careers</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <section aria-label="Social media links">
+            <h2>Connect With Us</h2>
+            
+            <ul>
+                <li>
+                    <a href="https://twitter.com/example" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Twitter (opens in new tab)">
+                        Twitter
+                    </a>
+                    <!-- rel="noopener noreferrer": security for external links -->
+                    <!-- aria-label: clarifies link destination and behavior -->
+                </li>
+                <li>
+                    <a href="https://linkedin.com/company/example" target="_blank" rel="noopener noreferrer" aria-label="Connect with us on LinkedIn (opens in new tab)">
+                        LinkedIn
+                    </a>
+                </li>
+                <li>
+                    <a href="https://github.com/example" target="_blank" rel="noopener noreferrer" aria-label="View our projects on GitHub (opens in new tab)">
+                        GitHub
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <p>
+            <small>&copy; <time datetime="2025">2025</time> Modern Web Solutions. All rights reserved.</small>
+            <!-- time: semantic element for dates -->
+        </p>
+    </footer>
+
+</body>
+</html>
